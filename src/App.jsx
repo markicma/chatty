@@ -66,11 +66,9 @@ class App extends Component {
           this.setState({currentUser: user})
           break;
 
-
         default:
           throw new Error("Unknown event type " + data.type);
       }
-
     }
     console.log("componentDidMount <App />");
   }

@@ -8,6 +8,7 @@ class ChatBar extends Component {
       username: ''
     };
   }
+  
   render() {
     console.log("Rendering <ChatBar/>");
     return (

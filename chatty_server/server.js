@@ -36,8 +36,6 @@ wss.on('connection', (ws) => {
       default:
         throw new Error("Unknown event type " + data.type);
     }
-
-
   })
 
   ws.on('close', () => {
