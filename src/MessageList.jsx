@@ -2,8 +2,10 @@ import React, {Component} from 'react';
 import Message from './Message.jsx'
 
 class MessageList extends Component {
-  render() {
-    console.log("Rendering <MessageList/>");
+
+  // _messageList maps all the mesages in the property messages and returns a div
+  // with an id of message-list that contains all the messages within
+  _messageList() {
     return (
       <div id="message-list">
         { this.props.messages.map((message) => {
@@ -13,6 +15,12 @@ class MessageList extends Component {
         })}
       </div>
     )
+  }
+
+  // renders the list of messages by calling the _messageList function
+  render() {
+    console.log("Rendering <MessageList/>");
+    return (this._messageList())
   }
 }
 
